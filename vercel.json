@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "public": true,
+  "name": "talk--cloudflare-ssr",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api"
+    }
+  ],
+  "functions": {
+    "api/index.js": {
+      "includeFiles": "dist/talk--cloudflare-ssr/**"
+    }
+  }
+}
