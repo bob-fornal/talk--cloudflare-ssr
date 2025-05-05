@@ -15,6 +15,7 @@ import { SetupSplitTestComponent } from './pages/split-test/setup-split-test/set
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MatInputModule } from '@angular/material/input';
     RedirectComponent,
     RegisterComponent,
     SplitTestComponent,
-    SetupSplitTestComponent
+    SetupSplitTestComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
