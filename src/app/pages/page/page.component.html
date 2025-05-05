@@ -1,0 +1,80 @@
+<div data-show-data-wrapper class="global-wrapper show-data-wrappers">
+  <div class="global-header">Page</div>
+
+  <button mat-flat-button (click)="back()">
+    Back
+  </button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Data Point</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>User ID</td>
+        <td>
+          <span data-matcher="userid">[data-matcher = "userid"]</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="header">
+    <div class="header-image">
+      @if (imagePath === '') {
+        <div data-matcher="image-path" class="image-placeholder">[data-matcher = "image-path"]</div>
+      } @else {
+        <img data-matcher="image-path" class="image-placeholder" src="" />
+      }
+    </div>
+    <div data-matcher="header-text" class="header-text">[data-matcher = "header-text"]</div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Data Point</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Email</td>
+        <td>
+          <span data-matcher="email">[data-matcher = "email"]</span>
+        </td>
+      </tr>
+      <tr>
+        <td>City</td>
+        <td>
+          <span data-matcher="city">[data-matcher = "city"]</span>
+        </td>
+      </tr>
+      <tr>
+        <td>State</td>
+        <td>
+          <span data-matcher="state">[data-matcher = "state"]</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Zipcode</td>
+        <td>
+          <span data-matcher="zipcode">[data-matcher = "zipcode"]</span>
+        </td>
+      </tr>
+      <tr>
+        <td>IP Address</td>
+        <td>
+          <span data-matcher="ip-address">[data-matcher = "ip-address"]</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button mat-flat-button (click)="back()">
+    Back
+  </button>
+</div>
